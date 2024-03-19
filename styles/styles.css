@@ -17,6 +17,7 @@
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    filter: blur(100px);
 }
 
 .form_container {
@@ -39,8 +40,8 @@
 }
 
 .div_input {
-    margin: 2em auto;
-    justify-content: baseline;
+    width: fit-content;
+    margin: 1em auto;
 }
 
 label {
@@ -49,8 +50,32 @@ label {
 }
 
 input {
-    margin-right: 0;
     width: 400px;
     padding: .2em;
+    border: none;
     border-radius: 4px;
+}
+
+input:focus {
+    background-color: var(--canary);
+    color: var(--night);
+    transition: all 1s ease-in-;
+}
+
+.form_btn {
+    background-color: var(--canary);
+    border-radius: 4px;
+    width: 100px;
+    color: var(--night);
+    margin: auto;
+    font-size: 1.2em;
+    padding: .2em;
+}
+
+.form_btn:hover {
+    cursor: pointer;
+    background-color: var(--night);
+    color: var(--canary);
+    border: 1px solid var(--canary);
+    transition: all 1s ease-in;
 }
