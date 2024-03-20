@@ -1,6 +1,6 @@
 :root {
     --night: #0c090dff;
-    --canary: #ffe629ff;
+    --grey: rgb(194, 188, 188);
 }
 
 * {
@@ -8,11 +8,11 @@
     padding: 0;
     box-sizing: border-box;
     font: 16px 'Teko', sans-serif;
-    color: var(--canary);
+    color: var(--grey);
 }
 
 .background {
-    background-image: url('https://images.unsplash.com/photo-1562832135-14a35d25edef?q=80&w=1890&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-image: url('https://images.unsplash.com/photo-1548162755-057c52582224?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -53,20 +53,20 @@ label {
 
 input {
     background-color: var(--night);
-    border: 1px solid var(--canary);
+    border: 1px solid var(--grey);
     width: 400px;
     padding: .2em;
     border-radius: 4px;
 }
 
 input:focus {
-    background-color: var(--canary);
+    background-color: var(--grey);
     color: var(--night);
     transition: all 1s ease-in-;
 }
 
 .form_btn {
-    background-color: var(--canary);
+    background-color: var(--grey);
     border-radius: 4px;
     width: 100px;
     color: var(--night);
@@ -79,6 +79,6 @@ input:focus {
     cursor: pointer;
     background-color: var(--night);
     color: var(--canary);
-    border: 1px solid var(--canary);
+    border: 1px solid var(--grey);
     transition: all 1s ease-in;
 }
